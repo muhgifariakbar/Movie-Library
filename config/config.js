@@ -1,4 +1,4 @@
-require('dotenv').config(); 
+require('dotenv').config();
 module.exports = {
   development: {
     username: process.env.DB_USERNAME,
@@ -8,11 +8,11 @@ module.exports = {
     dialect: 'postgres',
   },
   test: {
-    username: 'root',
-    password: null,
-    database: 'database_test',
-    host: '127.0.0.1',
-    dialect: 'mysql',
+    username: process.env.DB_USERNAME,
+    password: process.env.DB_USERNAME,
+    database: `${process.env.DB_DATABASE}-Test`,
+    host: process.env.DB_HOST,
+    dialect: 'postgres',
   },
   production: {
     username: 'root',
