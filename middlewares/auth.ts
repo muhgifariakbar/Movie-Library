@@ -7,16 +7,6 @@ async function Authentication(req: Request, res: Response, next: NextFunction) {
     if (!access_token)
       throw { name: 'access token not found, please login first' };
     let payload = verifyToken(access_token);
-    // to look later
-    // let user = await User.findByPk(payload.id);
-    // req.user = {
-    //   id: payload.id,
-    // };
-    // if (!user) {
-    //   throw { name: 'forbidden' };
-    // } else {
-    //   req.user = { id: user.id };
-    // }
     next();
   } catch (error) {
     res.status(401).json({ message: `Please Login First` });
