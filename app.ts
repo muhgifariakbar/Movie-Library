@@ -1,7 +1,7 @@
 import express from 'express';
 const app = express();
 import { Router } from 'express';
-const port = 3000;
+const port = process.env.PORT || 3000;
 // const router = require('./router/index');
 import router from './router/index';
 app.use(express.urlencoded({ extended: true }));
