@@ -10,15 +10,14 @@
 
 # How do I run the test?
 
-0. fill all .env as template
-1. npm i 
-2. npx sequelize-cli db:create --env test
-3. npx sequelize-cli db:migrate --env test
-4. npx sequelize-cli db:seed:all --env test
+1. npx sequelize-cli db:create --env test
+2. npx sequelize-cli db:migrate --env test
+3. npx sequelize-cli db:seed:all --env test
 
 # How do I start?
 
 1. npm start
+2. npm test -> (to start test)
 
 # How to access endpoint
 
@@ -38,8 +37,8 @@ Except GET, all end point required authentication. To create authentication :
 
 2. go to headers and insert `access_token` as the headers with the token that was generated with POST/login
 
-
 # EndPoint
+
 List of available endpoints:
 
 - `POST /author`
