@@ -2,12 +2,12 @@
   "name": "movie-library",
   "version": "1.0.0",
   "description": "",
-  "main": "app.ts",
+  "main": "index.ts",
   "engines": {
     "node": "14.x"
   },
   "scripts": {
-    "start": "nodemon app.ts",
+    "start": "nodemon index.ts",
     "test": "jest"
   },
   "repository": {
