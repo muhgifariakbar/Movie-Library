@@ -19,7 +19,7 @@
 1. npm start
 2. npm test -> (to start test)
 
-# How to access endpoint
+# How to access endpoint REST
 
 Except GET, all end point required authentication. To create authentication :
 
@@ -108,3 +108,7 @@ Request:
   "password": "string"
 }
 ```
+# How to access endpoint Graphql
+1. cd to graphql
+2. nodemon app.js
+3. click the link of localhost
