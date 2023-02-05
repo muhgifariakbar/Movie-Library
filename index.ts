@@ -1,6 +1,6 @@
 import express from 'express';
 const app = express();
-import { Router } from 'express';
+require('pg');
 const port = process.env.PORT || 3000;
 // const router = require('./router/index');
 import router from './router/index';
